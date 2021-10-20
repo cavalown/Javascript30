@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update CSS Variables</title>
+</head>
+<h2>Update CSS Variable with <span class='hl'>JS</span></h2>
+<div class="controls">
+    <label for="spacing">Spacing</label>
+    <input id="spacing" type="range" name="spacing" value="10" min="10" max="200" data-sizing="px">
+    <label for="blur">Blur</label>
+    <input id="Blur" type="range" name="blur" value="0" min="0" max="25" data-sizing="px">
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#ffc600">
+</div>
+<figure>
+    <img alt="picture for controls" src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+    <figcaption>▲示範圖片</figcaption>
+</figure>
+
+
+<style>
+    :root {
+        --base: #ffc600;
+        --spacing: 10px;
+        --blur: 0px;
+    }
+
+    img {
+        padding: var(--spacing);
+        background: var(--base);
+        filter: blur(var(--blur));
+    }
+
+    .hl {
+        color: var(--base);
+    }
+
+    body {
+        text-align: center;
+        background: #6d1932;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 100;
+        font-size: 30px;
+    }
+
+    .controls {
+        margin-bottom: 50px;
+    }
+
+    input {
+        width: 100px;
+    }
+</style>
+
+<script>
+    const inputs = document.querySelectorAll(".controls input");
+
+    function handleUpdate() {
+        const suffix = this.dataset.sizing || '';
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
+
+</script>
+
+<body>
+
+</body>
+
+</html>

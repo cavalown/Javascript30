@@ -3,7 +3,7 @@ https://cavalown.github.io/Javascript30/
 
 ### [Practice Javascript 30 Official Website](https://javascript30.com/)
 
-1. [JavaScript Drum Kit](https://cavalown.github.io/Javascript30/01JavaScriptDrumKit/) &rarr; [NOTE]()
+1. [JavaScript Drum Kit](https://cavalown.github.io/Javascript30/01JavaScriptDrumKit/) &rarr; [NOTE](https://github.com/cavalown/Javascript30/blob/main/01JavaScriptDrumKit/note.md)
 2. [CSS + JS Clock](https://cavalown.github.io/Javascript30/02JSandCSSClock/) &rarr; [NOTE](https://github.com/cavalown/Javascript30/blob/main/02JSandCSSClock/note.md)
 3. [Playing with CSS Variables and JS](https://cavalown.github.io/Javascript30/03CSSVariables/) &rarr; [NOTE](https://github.com/cavalown/Javascript30/blob/main/03CSSVariables/note.md)
 4. [Array Cardio Day 1](https://cavalown.github.io/Javascript30/04ArrayCardioDay1/) &rarr; [NOTE](https://github.com/cavalown/Javascript30/blob/main/04ArrayCardioDay1/note.md)
